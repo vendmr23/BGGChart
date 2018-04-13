@@ -49,6 +49,11 @@ public class BGGChart {
         writeToConsolidatedFiles(baseSize, imageUrls, imagesAcross, imagesDown);
     }
 
+    /**
+     * Downloads each image individually.
+     * @param baseSize
+     * @param imageUrls
+     */
     private static void writeToSingleFiles(int baseSize, List<String> imageUrls) {
         int i = 0;
         for (String imageUrl : imageUrls) {
@@ -74,6 +79,13 @@ public class BGGChart {
         }
     }
 
+    /**
+     * Creates the compound images (called pages here)
+     * @param baseSize
+     * @param imageUrls
+     * @param inAcross
+     * @param inDown
+     */
     private static void writeToConsolidatedFiles(int baseSize, List<String> imageUrls, int inAcross, int inDown) {
 
         int imageCount = 0;
@@ -135,6 +147,12 @@ public class BGGChart {
         return newImage;
     }
 
+    /**
+     * oarse the collection xml file
+     * @param inCollectionXmlString
+     * @param inImageUrls
+     * @throws IOException
+     */
     private void extractImageUrls(String inCollectionXmlString, List<String> inImageUrls) throws IOException {
         try {
 
@@ -168,6 +186,12 @@ public class BGGChart {
         }
     }
 
+    /**
+     * Retrieve the collection from BGG
+     * @param inUserId
+     * @return
+     * @throws IOException
+     */
     String fetchCollectionXml(String inUserId) throws IOException {
         String collectionXmlString = null;
         CloseableHttpClient httpclient = HttpClients.createDefault();
