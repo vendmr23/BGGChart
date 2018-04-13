@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BGGChart.iml" filepath="$PROJECT_DIR$/.idea/modules/BGGChart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BGGChart_main.iml" filepath="$PROJECT_DIR$/.idea/modules/BGGChart_main.iml" group="BGGChart" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BGGChart_test.iml" filepath="$PROJECT_DIR$/.idea/modules/BGGChart_test.iml" group="BGGChart" />
+    </modules>
+  </component>
+</project>

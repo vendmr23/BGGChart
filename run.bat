@@ -1,0 +1,1 @@
+java -jar ./out/artifacts/BGGChart_jar/BGGChart.jar VENDMR 300 12 18
